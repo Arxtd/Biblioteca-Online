@@ -53,6 +53,7 @@ h1 {
 }
 
 .sobre {
+    height: 40%;
     margin-top: 20px;
     text-align: center;
 }
@@ -75,3 +76,17 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 2.8rem; /* Tamanho maior para dispositivos móveis */
+    }
+
+    #p-title {
+      font-size: 2.2rem; /* Tamanho maior para dispositivos móveis */
+    }
+
+    #entrar {
+      font-size: 40px; /* Tamanho maior para dispositivos móveis */
+    }
+  }
