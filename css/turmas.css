@@ -1,0 +1,31 @@
+body {
+    background-color: #fff; /* Branco */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6600; /* Laranja */
+}
+
+.turma {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ff6600; /* Laranja */
+    color: #fff; /* Branco */
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.turma:hover {
+    background-color: #000; /* Preto */
+}
