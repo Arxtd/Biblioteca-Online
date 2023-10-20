@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/serie.css">
+    <title>1° Ano</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>{1° Ano}</h1>
+        <p>Qual livro deseja ler?</p>
+
+        <button class="accordion">Matemática</button>
+        <div class="panel">
+            <p>Este livro fornece as bases sólidas necessárias para o desenvolvimento das
+                 habilidades matemáticas cruciais ao longo da jornada educacional.</p>
+            <br>
+
+            <a href="https://s3.amazonaws.com/pnld.ftd.com.br/wp-content/uploads/2021/08/06140011/Funcoes-e-Progressoes.pdf"
+             class="botao-verde" target="_blank" >Ler Livro</a>
+        </div>
+        <button class="accordion">Ciências da natureza</button>
+        <div class="panel">
+            <p>Este livro serve para acompanhar as aulas de: Química e Física</p>
+
+            <br>
+
+            <a href="https://pnld.moderna.com.br/wp-content/uploads/2021/05/FP_0198P21203_2_MP_PDF_CARAC.pdf"
+             class="botao-verde" target="_blank" >Ler Livro</a>
+        </div>
+        <button class="accordion">Ciências humanas</button>
+        <div class="panel">
+            <p>Este livro serve para acompanhar as aulas de: História, Geografia, Sociologia e Filosofia.</p>
+
+            <br>
+
+            <a href="https://pnld.moderna.com.br/wp-content/uploads/2021/05/0184P21204_2_MP_PDF_CARAC.pdf"
+             class="botao-verde" target="_blank" >Ler Livro</a>
+        </div>
+        <button class="accordion">Projeto de vida</button>
+        <div class="panel">
+            <p>Livro Indisponível.</p>
+
+            <br>
+
+            <a href=""
+             class="botao-verde" target="_blank" >Ler Livro</a>
+        </div>
+        <button class="accordion">Inglês</button>
+        <div class="panel">
+            <p>Livro fundamental para o aprendizado de uma linguagem.</p>
+
+            <br>
+
+            <a href="https://pnld.moderna.com.br/wp-content/uploads/2021/05/FP_0164P21093_1_MP_PDF_CARAC.pdf"
+             class="botao-verde" target="_blank" >Ler Livro</a>
+        </div>
+        <button class="accordion">Português</button>
+        <div class="panel">
+            <p>Livro Ìndisponivel.</p>
+
+            <br>
+
+            <a href=""
+             class="botao-verde" target="_blank" >Ler Livro</a>
+        </div>
+        
+        <br>
+
+        <p>Conhecimento nunca é pouco</p>
+    
+        <script>
+            var accordions = document.querySelectorAll(".accordion");
+    
+            accordions.forEach(function(accordion) {
+                accordion.addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            });
+        </script>
+
+</body>
+</html>

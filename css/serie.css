@@ -1,0 +1,76 @@
+body {
+    background-color: #fff;
+    /* Branco */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6600;
+    /* Laranja */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+        /* Tamanho maior para dispositivos móveis */
+    }
+
+    .turma {
+        font-size: 40px;
+        /* Tamanho maior para dispositivos móveis */
+    }
+}
+
+.accordion {
+    background: linear-gradient(to bottom, #FFA500, #FF8C00);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    max-height: 0;
+
+    background-color: #ccc; /* Cinza */
+    width: 89%; /* Largura do card */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    text-align: center; /* Alinhamento de text*/
+}
+
+.accordion.active + .panel {
+    max-height: 200px; /* Defina a altura máxima adequada */
+}
+
+.botao-verde {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px; /* Isso cria um botão redondo */
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .botao-verde:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50); /* Altera o gradiente no hover */
+  }
