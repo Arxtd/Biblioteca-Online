@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/serie.css">
+    <link rel="shortcut icon" href="img/book.jpg" type="image/x-icon">
     <title>2° Ano</title>
 
 </head>
+
 <body>
     <div class="container">
         <h1>{2° Ano}</h1>
@@ -14,12 +17,18 @@
 
         <button class="accordion">Matemática</button>
         <div class="panel">
-            <p>Livro Indísponivel.</p>
+            <p>Livro para acompanhar as aulas de Matemática.</p>
             <br>
+
+            <a href="https://acervo.ftd.com.br/leitor/?book=PNLD2021/Arquivo%20Mkt/Prisma-matem%C3%A1tica-Volume-3-Mestre"
+                class="botao-verde" target="_blank">Ler Livro</a>
         </div>
         <button class="accordion">Ciências da natureza</button>
         <div class="panel">
-            <p>Livro Ìndisponivel</p>
+            <p>Livro Disponível</p>
+
+            <a href="https://pnld.moderna.com.br/wp-content/uploads/2021/05/FP_0198P21203_3_MP_PDF_CARAC.pdf"
+             class="botao-verde" target="_blank" >Ler Livro</a>
         </div>
         <button class="accordion">Ciências humanas</button>
         <div class="panel">
@@ -27,8 +36,8 @@
 
             <br>
 
-            <a href="https://online.anyflip.com/xpjnk/xjcq/mobile/index.html#google_vignette"
-             class="botao-verde" target="_blank" >Ler Livro</a>
+            <a href="https://pnld.moderna.com.br/wp-content/uploads/2021/05/FP_0184P21204_3_MP_PDF_CARAC.pdf"
+                class="botao-verde" target="_blank">Ler Livro</a>
         </div>
         <button class="accordion">Projeto de vida</button>
         <div class="panel">
@@ -40,19 +49,23 @@
         </div>
         <button class="accordion">Português</button>
         <div class="panel">
-            <p>Livro Ìndisponivel.</p>
+            <p>Livro Disponível.</p>
+            
+            <br>
 
+            <a href="https://storage.googleapis.com/edocente-content-production/PNLD/PNLD_2021_OBJETIVO_2/Obra-4e99612f-2ac7-4aa2-a511-4f975bcb0a0e/4e99612f-2ac7-4aa2-a511-4f975bcb0a0e.pdf"
+             class="botao-verde" target="_blank" >Ler Livro</a>
         </div>
-        
+
         <br>
 
         <p>Conhecimento nunca é pouco</p>
-    
+
         <script>
             var accordions = document.querySelectorAll(".accordion");
-    
-            accordions.forEach(function(accordion) {
-                accordion.addEventListener("click", function() {
+
+            accordions.forEach(function (accordion) {
+                accordion.addEventListener("click", function () {
                     this.classList.toggle("active");
                     var panel = this.nextElementSibling;
                     if (panel.style.display === "block") {
@@ -65,4 +78,5 @@
         </script>
 
 </body>
+
 </html>
