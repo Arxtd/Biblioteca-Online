@@ -1,6 +1,6 @@
 body {
     background-color: #fff;
-    /* Branco */
+   
     font-family: Arial, sans-serif;
 }
 
@@ -13,18 +13,18 @@ body {
 
 h1 {
     color: #ff6600;
-    /* Laranja */
+   
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 2.8rem;
-        /* Tamanho maior para dispositivos móveis */
+       
     }
 
     .turma {
         font-size: 40px;
-        /* Tamanho maior para dispositivos móveis */
+       
     }
 }
 
@@ -44,25 +44,25 @@ h1 {
     display: none;
     padding: 10px;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 1.5s ease-in-out;
     max-height: 0;
 
-    background-color: #ccc; /* Cinza */
-    width: 89%; /* Largura do card */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Borda arredondada */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
-    text-align: center; /* Alinhamento de text*/
+    background-color: #ffffff;
+    width: 89%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .accordion.active + .panel {
-    max-height: 200px; /* Defina a altura máxima adequada */
+    max-height: 200px;
 }
 
 .botao-verde {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 50px; /* Isso cria um botão redondo */
+    border-radius: 50px;
     background: linear-gradient(to right, #4CAF50, #45a049);
     color: white;
     text-decoration: none;
@@ -72,5 +72,5 @@ h1 {
   }
   
   .botao-verde:hover {
-    background: linear-gradient(to right, #45a049, #4CAF50); /* Altera o gradiente no hover */
+    background: linear-gradient(to right, #45a049, #4CAF50);
   }
